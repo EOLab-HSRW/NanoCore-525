@@ -8,7 +8,7 @@
 		(title "NanoCore 525, DC-DC converter 5V 25W")
 		(rev "0.1")
 		(company "EOLab")
-		(comment 1 "Author: Harley Lara")
+		(comment 1 "Author: Harley Lara, Mauricio Zacarias")
 		(comment 2 "Repo: github.com/EOLab-HSRW/NanoCore-525")
 	)
 	(lib_symbols
@@ -1441,102 +1441,6 @@
 				)
 			)
 		)
-		(symbol "power:GND"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GNDA"
 			(power)
 			(pin_numbers hide)
@@ -1803,6 +1707,12 @@
 		(uuid "4d20155f-60ec-4564-9c24-8b1439a0a3da")
 	)
 	(junction
+		(at 85.09 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ead7948-4a9f-4783-976e-45cc251f0c9d")
+	)
+	(junction
 		(at 170.18 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1900,6 +1810,16 @@
 	)
 	(wire
 		(pts
+			(xy 260.35 115.57) (xy 262.89 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1287a888-061a-4015-bcba-339273c995f4")
+	)
+	(wire
+		(pts
 			(xy 170.18 82.55) (xy 170.18 83.82)
 		)
 		(stroke
@@ -1940,23 +1860,13 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 91.44) (xy 262.89 91.44)
+			(xy 260.35 77.47) (xy 262.89 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "243ac743-b07e-42ab-beac-6cef65ec54ec")
-	)
-	(wire
-		(pts
-			(xy 260.35 81.28) (xy 262.89 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "273f5cad-057b-40eb-973c-0a7eac027c8c")
 	)
 	(wire
 		(pts
@@ -2040,7 +1950,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 91.44) (xy 85.09 93.98)
+			(xy 85.09 91.44) (xy 85.09 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2090,7 +2000,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 78.74) (xy 262.89 78.74)
+			(xy 260.35 68.58) (xy 262.89 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2110,7 +2020,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 104.14) (xy 262.89 104.14)
+			(xy 260.35 86.36) (xy 262.89 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2137,6 +2047,26 @@
 			(type default)
 		)
 		(uuid "539c89ce-abb2-4251-bd9b-10b4374cb573")
+	)
+	(wire
+		(pts
+			(xy 260.35 71.12) (xy 262.89 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54f1c1ed-af2c-4e85-ad01-dc5e9f4230ba")
+	)
+	(wire
+		(pts
+			(xy 260.35 113.03) (xy 262.89 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61207a18-9370-4e7d-9e4b-d0645694925f")
 	)
 	(wire
 		(pts
@@ -2190,7 +2120,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 132.08) (xy 262.89 132.08)
+			(xy 260.35 106.68) (xy 262.89 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2200,7 +2130,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 111.76) (xy 39.37 114.3)
+			(xy 39.37 105.41) (xy 39.37 107.95)
 		)
 		(stroke
 			(width 0)
@@ -2210,7 +2140,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 116.84) (xy 262.89 116.84)
+			(xy 260.35 95.25) (xy 262.89 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2230,7 +2160,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 93.98) (xy 262.89 93.98)
+			(xy 260.35 80.01) (xy 262.89 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2290,6 +2220,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 92.71) (xy 85.09 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "871535b1-fb4e-4aeb-8beb-a4de3e10c324")
+	)
+	(wire
+		(pts
 			(xy 170.18 96.52) (xy 170.18 91.44)
 		)
 		(stroke
@@ -2330,7 +2270,17 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 106.68) (xy 262.89 106.68)
+			(xy 45.72 85.09) (xy 48.26 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96c97925-63b5-4671-8e76-737be1987c17")
+	)
+	(wire
+		(pts
+			(xy 260.35 88.9) (xy 262.89 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2420,6 +2370,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 92.71) (xy 85.09 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba997e9d-6b12-4a46-b14d-833fadc6f3c9")
+	)
+	(wire
+		(pts
 			(xy 124.46 113.03) (xy 133.35 113.03)
 		)
 		(stroke
@@ -2467,16 +2427,6 @@
 			(type default)
 		)
 		(uuid "c47d7e46-ee2b-43ef-98f6-1d38865b787e")
-	)
-	(wire
-		(pts
-			(xy 48.26 85.09) (xy 45.72 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c67a2c5f-6fdc-4ae9-aace-0b8035547ccc")
 	)
 	(wire
 		(pts
@@ -2530,16 +2480,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 124.46) (xy 39.37 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d50881c2-31cc-4f2f-8180-eff2a23e0faa")
-	)
-	(wire
-		(pts
 			(xy 163.83 92.71) (xy 163.83 86.36)
 		)
 		(stroke
@@ -2570,7 +2510,17 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 129.54) (xy 262.89 129.54)
+			(xy 39.37 118.11) (xy 39.37 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e424fd36-0463-4551-8b32-ea56a2c44104")
+	)
+	(wire
+		(pts
+			(xy 260.35 104.14) (xy 262.89 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2630,7 +2580,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 119.38) (xy 262.89 119.38)
+			(xy 260.35 97.79) (xy 262.89 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2683,7 +2633,7 @@
 	)
 	(text "Input voltage: 6V - 28V\nNominal: 7.2V"
 		(exclude_from_sim no)
-		(at 30.734 80.772 0)
+		(at 47.498 92.964 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2825,6 +2775,28 @@
 		)
 		(uuid "fbab0d16-944b-4be3-aef0-12d47488067a")
 	)
+	(label "RT"
+		(at 124.46 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51795b11-162a-4648-b785-20ebc74ec986")
+	)
+	(label "FB"
+		(at 162.56 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "589598d0-893b-4d61-a9aa-4580d6f0c3e7")
+	)
 	(label "POWER_EN"
 		(at 121.92 92.71 0)
 		(fields_autoplaced yes)
@@ -2848,6 +2820,28 @@
 			(justify right bottom)
 		)
 		(uuid "992bf570-c658-4c75-b5b6-9bfb26a981ae")
+	)
+	(label "SW_EN"
+		(at 39.37 125.73 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9db7ad79-497f-4cd3-8273-93a57d4d9697")
+	)
+	(label "RBOOT"
+		(at 161.29 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a075b121-4484-4bd2-b888-ec5e852dd14b")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -2894,7 +2888,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "UMK325AB7106MM-T"
+		(property "Description" ""
+			(at 107.95 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "UMK325AB7106MM-T"
+			(at 107.95 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "963-UMK325AB7106MM-T"
 			(at 107.95 87.63 0)
 			(effects
 				(font
@@ -2913,6 +2925,73 @@
 			(project "led-drones"
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
 					(reference "C_IN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 262.89 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02de367b-b4c8-499f-b2d0-015b55a2641f")
+		(property "Reference" "#PWR02"
+			(at 269.24 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 266.7 80.0099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 262.89 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76cc382a-0593-4f73-9555-ee4ee8f054c7")
+		)
+		(instances
+			(project "NanoCore-525"
+				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -3097,7 +3176,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "UMK325AB7106MM-T"
+		(property "Description" ""
+			(at 85.09 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "UMK325AB7106MM-T"
+			(at 85.09 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "963-UMK325AB7106MM-T"
 			(at 85.09 87.63 0)
 			(effects
 				(font
@@ -3233,7 +3330,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CL32B476KPJNNNE"
+		(property "Description" ""
+			(at 194.31 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "CL32B476KPJNNNE"
+			(at 194.31 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "187-CL32B476KPJNNNE"
 			(at 194.31 87.63 0)
 			(effects
 				(font
@@ -3259,32 +3374,32 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 255.27 132.08 180)
+		(at 255.27 106.68 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "139a92ef-a5fe-47ee-a4c0-668dbfee64da")
-		(property "Reference" "J5"
-			(at 255.27 123.19 0)
+		(property "Reference" "Vout5"
+			(at 252.476 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 255.27 125.73 0)
+		(property "Value" "-"
+			(at 255.27 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 255.27 132.08 0)
+		(property "Footprint" "B2PS-VH:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal"
+			(at 255.27 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,7 +3408,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 255.27 132.08 0)
+			(at 255.27 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3302,7 +3417,25 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 255.27 132.08 0)
+			(at 255.27 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "B2PS-VH(LF)(SN)"
+			(at 255.27 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "306-B2PS-VHLFSN"
+			(at 255.27 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3319,7 +3452,7 @@
 		(instances
 			(project "led-drones"
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "J5")
+					(reference "Vout5")
 					(unit 1)
 				)
 			)
@@ -3392,6 +3525,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDREF")
+		(at 262.89 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d1a7464-f893-46ec-912b-882705618bca")
+		(property "Reference" "#PWR05"
+			(at 269.24 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 266.7 106.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 262.89 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04e89f24-ad7b-4f3f-ae35-72df3d633e7c")
+		)
+		(instances
+			(project "NanoCore-525"
+				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 107.95 82.55 0)
 		(unit 1)
@@ -3419,7 +3619,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 113.03 82.55 0)
 			(effects
 				(font
@@ -3438,6 +3638,24 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 107.95 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" ""
+			(at 107.95 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" ""
 			(at 107.95 82.55 0)
 			(effects
 				(font
@@ -3468,7 +3686,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "226c89b5-4135-49ab-baa7-76bf19cd0330")
-		(property "Reference" "R_ENT"
+		(property "Reference" "R_ENT1"
 			(at 41.91 129.5399 0)
 			(effects
 				(font
@@ -3486,7 +3704,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 37.592 130.81 90)
 			(effects
 				(font
@@ -3513,6 +3731,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" ""
+			(at 39.37 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" ""
+			(at 39.37 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "659eeabf-7b78-4ea4-a680-9b56ef255ce4")
 		)
@@ -3522,7 +3758,7 @@
 		(instances
 			(project "led-drones"
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "R_ENT")
+					(reference "R_ENT1")
 					(unit 1)
 				)
 			)
@@ -3538,7 +3774,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24cf64ee-cbbd-494b-b00d-61dc9926db12")
-		(property "Reference" "R_FBT"
+		(property "Reference" "R_FBT1"
 			(at 172.72 86.3599 0)
 			(effects
 				(font
@@ -3556,7 +3792,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 168.402 87.63 90)
 			(effects
 				(font
@@ -3583,6 +3819,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" ""
+			(at 170.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" ""
+			(at 170.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "045444e2-1c95-4a1e-a92a-c5680559c84f")
 		)
@@ -3592,7 +3846,7 @@
 		(instances
 			(project ""
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "R_FBT")
+					(reference "R_FBT1")
 					(unit 1)
 				)
 			)
@@ -3600,32 +3854,32 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 255.27 81.28 180)
+		(at 255.27 71.12 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "25b73a5b-724b-417d-9205-07e8c2282b05")
-		(property "Reference" "J1"
-			(at 255.27 72.39 0)
+		(property "Reference" "Vout1"
+			(at 252.222 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 255.27 74.93 0)
+		(property "Value" "-"
+			(at 255.27 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 255.27 81.28 0)
+		(property "Footprint" "B2PS-VH:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal"
+			(at 255.27 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3634,7 +3888,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 255.27 81.28 0)
+			(at 255.27 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3643,7 +3897,25 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 255.27 81.28 0)
+			(at 255.27 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "B2PS-VH(LF)(SN)"
+			(at 255.27 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "306-B2PS-VHLFSN"
+			(at 255.27 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3660,7 +3932,7 @@
 		(instances
 			(project ""
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "J1")
+					(reference "Vout1")
 					(unit 1)
 				)
 			)
@@ -3668,7 +3940,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 262.89 104.14 270)
+		(at 262.89 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3677,7 +3949,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a890d3d-bd20-4f49-a745-428df11f0d03")
 		(property "Reference" "#PWR011"
-			(at 259.08 104.14 0)
+			(at 259.08 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3686,7 +3958,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 266.7 104.1399 90)
+			(at 266.7 86.3599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3695,7 +3967,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 262.89 104.14 0)
+			(at 262.89 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3704,7 +3976,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 104.14 0)
+			(at 262.89 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3713,7 +3985,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 262.89 104.14 0)
+			(at 262.89 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3734,33 +4006,100 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 255.27 106.68 180)
+		(lib_id "power:GNDREF")
+		(at 262.89 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2f6be439-01c1-46f7-9c5f-83205313db3c")
-		(property "Reference" "J3"
-			(at 255.27 97.79 0)
+		(uuid "2d7eed49-860f-43ad-aada-9f50221619b0")
+		(property "Reference" "#PWR08"
+			(at 269.24 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 255.27 100.33 0)
+		(property "Value" "PGND"
+			(at 266.7 115.5699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 106.68 0)
+			(at 262.89 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 262.89 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59070a3f-140c-47f7-9714-7fc61aed3a0c")
+		)
+		(instances
+			(project "NanoCore-525"
+				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 255.27 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f6be439-01c1-46f7-9c5f-83205313db3c")
+		(property "Reference" "Vout3"
+			(at 252.222 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-"
+			(at 255.27 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "B2PS-VH:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal"
+			(at 255.27 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3769,7 +4108,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 255.27 106.68 0)
+			(at 255.27 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3778,7 +4117,25 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 255.27 106.68 0)
+			(at 255.27 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "B2PS-VH(LF)(SN)"
+			(at 255.27 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "306-B2PS-VHLFSN"
+			(at 255.27 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3795,7 +4152,7 @@
 		(instances
 			(project "led-drones"
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "J3")
+					(reference "Vout3")
 					(unit 1)
 				)
 			)
@@ -3893,7 +4250,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Texas_B3QFN-14-1EP_5x5.5mm_P0.65mm_ThermalVia"
+		(property "Footprint" "TLVM:B3QFN20_RDL_TEX"
 			(at 147.32 100.33 0)
 			(effects
 				(font
@@ -3912,6 +4269,24 @@
 			)
 		)
 		(property "Description" "High-Density, 3-V to 36-V Input, 1-V to 6-V Output, 6-A Synchronous Buck DC/DC Power Module"
+			(at 147.32 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "TLVM13660RDLR"
+			(at 147.32 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "595-TLVM13660RDLR "
 			(at 147.32 100.33 0)
 			(effects
 				(font
@@ -4056,6 +4431,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDREF")
+		(at 262.89 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e70b74c-153f-4a69-87fd-18455f55477a")
+		(property "Reference" "#PWR03"
+			(at 269.24 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 266.7 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 262.89 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b151de7c-d85f-46e9-b240-b0e23bb58124")
+		)
+		(instances
+			(project "NanoCore-525"
+				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 124.46 120.65 0)
 		(unit 1)
@@ -4065,7 +4507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48605ac5-704b-40f8-bae4-6cd4bdaba0d8")
-		(property "Reference" "R_RT"
+		(property "Reference" "R_RT1"
 			(at 127 119.3799 0)
 			(effects
 				(font
@@ -4083,7 +4525,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 122.682 120.65 90)
 			(effects
 				(font
@@ -4110,6 +4552,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" ""
+			(at 124.46 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" ""
+			(at 124.46 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b345fddb-bdff-4e10-9be3-e9144ee20208")
 		)
@@ -4119,7 +4579,7 @@
 		(instances
 			(project ""
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "R_RT")
+					(reference "R_RT1")
 					(unit 1)
 				)
 			)
@@ -4134,27 +4594,26 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4c96b34b-7cfa-4f46-af43-028f9f1d2678")
-		(property "Reference" "J6"
-			(at 38.1 85.0899 0)
+		(property "Reference" "VIN1"
+			(at 40.64 81.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "-"
 			(at 38.1 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_VH_B2P-VH-B_1x02_P3.96mm_Vertical"
 			(at 40.64 85.09 0)
 			(effects
 				(font
@@ -4181,6 +4640,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" "B2P-VH-B(LF)(SN)"
+			(at 40.64 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "306-306-B2PVHBLFSN"
+			(at 40.64 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "99a6c041-cdd8-4a76-a43a-c6a844dfe1b9")
 		)
@@ -4190,7 +4667,74 @@
 		(instances
 			(project ""
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "J6")
+					(reference "VIN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 262.89 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69262845-a49d-497a-a875-45c15f956cb2")
+		(property "Reference" "#PWR01"
+			(at 269.24 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 266.7 71.1199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 262.89 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6aacd42d-f01e-40d0-b1a2-0106296d85ad")
+		)
+		(instances
+			(project "NanoCore-525"
+				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -4264,32 +4808,32 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 255.27 119.38 180)
+		(at 255.27 97.79 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6ea5fd0f-eea1-42ca-bbf4-ecc33eb24d67")
-		(property "Reference" "J4"
-			(at 255.27 110.49 0)
+		(property "Reference" "Vout4"
+			(at 252.476 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 255.27 113.03 0)
+		(property "Value" "-"
+			(at 255.27 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 255.27 119.38 0)
+		(property "Footprint" "B2PS-VH:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal"
+			(at 255.27 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4298,7 +4842,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 255.27 119.38 0)
+			(at 255.27 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4307,7 +4851,25 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 255.27 119.38 0)
+			(at 255.27 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "B2PS-VH(LF)(SN)"
+			(at 255.27 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "306-B2PS-VHLFSN"
+			(at 255.27 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4324,7 +4886,7 @@
 		(instances
 			(project "led-drones"
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "J4")
+					(reference "Vout4")
 					(unit 1)
 				)
 			)
@@ -4391,6 +4953,73 @@
 			(project "led-drones"
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 262.89 113.03 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a7c1526-2529-4444-970a-1d27ce1208b1")
+		(property "Reference" "#PWR06"
+			(at 259.08 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 266.7 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 262.89 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6a1ebe6-3b72-444b-b5c6-26b377cfdf4b")
+		)
+		(instances
+			(project "NanoCore-525"
+				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4538,7 +5167,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ef51e06-9a1c-402e-a0e6-c3977e9f2c86")
-		(property "Reference" "C_FF"
+		(property "Reference" "C_FF1"
 			(at 185.42 86.3599 0)
 			(effects
 				(font
@@ -4583,6 +5212,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" ""
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" ""
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8a01bfeb-426c-4051-8819-e2cf8dccbf31")
 		)
@@ -4592,74 +5239,7 @@
 		(instances
 			(project ""
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "C_FF")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 262.89 106.68 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "81649ce8-8932-4946-ba6e-fe1623e44f80")
-		(property "Reference" "#PWR012"
-			(at 269.24 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 266.7 106.6799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 262.89 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 262.89 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 262.89 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5de80a18-4657-496b-9d40-7f26aa0523c2")
-		)
-		(instances
-			(project "led-drones"
-				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "#PWR012")
+					(reference "C_FF1")
 					(unit 1)
 				)
 			)
@@ -4798,6 +5378,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 255.27 115.57 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90302a3c-31ae-44bd-924d-3ce95684b069")
+		(property "Reference" "Vout6"
+			(at 252.476 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-"
+			(at 255.27 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "B2PS-VH:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal"
+			(at 255.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 255.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 255.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "B2PS-VH(LF)(SN)"
+			(at 255.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "306-B2PS-VHLFSN"
+			(at 255.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c8d9db6-dacf-4983-8776-307de3401f2a")
+		)
+		(pin "2"
+			(uuid "6846c5ba-3d69-4202-9cc9-0a7659cf138c")
+		)
+		(instances
+			(project "NanoCore-525"
+				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
+					(reference "Vout6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 170.18 102.87 0)
 		(unit 1)
@@ -4807,7 +5473,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "971a0708-342d-4689-99d3-3de8c46fcffc")
-		(property "Reference" "R_FBB"
+		(property "Reference" "R_FBB1"
 			(at 172.72 101.5999 0)
 			(effects
 				(font
@@ -4825,7 +5491,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 168.402 102.87 90)
 			(effects
 				(font
@@ -4852,6 +5518,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" ""
+			(at 170.18 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" ""
+			(at 170.18 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "97e7b0ef-c20c-413e-8ff3-bd3e84c07240")
 		)
@@ -4861,7 +5545,7 @@
 		(instances
 			(project "led-drones"
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "R_FBB")
+					(reference "R_FBB1")
 					(unit 1)
 				)
 			)
@@ -4877,7 +5561,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98a675f4-693a-4e9e-9539-202c0c73ea39")
-		(property "Reference" "R_ENB"
+		(property "Reference" "R_ENB1"
 			(at 41.91 142.2399 0)
 			(effects
 				(font
@@ -4895,7 +5579,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 37.592 143.51 90)
 			(effects
 				(font
@@ -4922,6 +5606,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" ""
+			(at 39.37 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" ""
+			(at 39.37 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6177dc37-5a08-41fd-9aa5-fa10c11e96f7")
 		)
@@ -4931,7 +5633,7 @@
 		(instances
 			(project "led-drones"
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "R_ENB")
+					(reference "R_ENB1")
 					(unit 1)
 				)
 			)
@@ -5049,7 +5751,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CL32B476KPJNNNE"
+		(property "Description" ""
+			(at 218.44 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "CL32B476KPJNNNE"
+			(at 218.44 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "187-CL32B476KPJNNNE"
 			(at 218.44 87.63 0)
 			(effects
 				(font
@@ -5068,73 +5788,6 @@
 			(project "led-drones"
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
 					(reference "C_OUT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 262.89 81.28 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba053823-0227-44eb-8378-1f9abc31765f")
-		(property "Reference" "#PWR08"
-			(at 269.24 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 266.7 81.2799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 262.89 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 262.89 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 262.89 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "75ff6bc9-6b9b-4fcb-bbee-1efc6f5db404")
-		)
-		(instances
-			(project "led-drones"
-				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5233,7 +5886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad2.0mm"
 			(at 273.05 156.21 0)
 			(effects
 				(font
@@ -5260,6 +5913,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" ""
+			(at 273.05 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" ""
+			(at 273.05 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b71eb44d-acaf-4a00-85c8-ef190c1d8858")
 		)
@@ -5276,17 +5947,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 262.89 93.98 90)
+		(lib_id "power:GNDREF")
+		(at 262.89 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c0a12912-6fea-499e-aabf-c689a975d146")
-		(property "Reference" "#PWR010"
-			(at 269.24 93.98 0)
+		(uuid "c52142f0-a8b4-499b-ac82-334760b28aa4")
+		(property "Reference" "#PWR04"
+			(at 269.24 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5294,8 +5965,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 266.7 93.9799 90)
+		(property "Value" "PGND"
+			(at 266.7 97.7899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5304,7 +5975,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 262.89 93.98 0)
+			(at 262.89 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5313,7 +5984,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 93.98 0)
+			(at 262.89 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5321,8 +5992,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 262.89 93.98 0)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 262.89 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5331,12 +6002,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2411fade-247d-4410-acc9-ba42bffa95c0")
+			(uuid "d8d5defd-819d-4749-83d5-4b82c4568c88")
 		)
 		(instances
-			(project "led-drones"
+			(project "NanoCore-525"
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "#PWR010")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5344,7 +6015,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 262.89 116.84 270)
+		(at 262.89 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5353,7 +6024,7 @@
 		(fields_autoplaced yes)
 		(uuid "caf7522c-ec5c-4102-8a23-84340bd639b2")
 		(property "Reference" "#PWR013"
-			(at 259.08 116.84 0)
+			(at 259.08 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5362,7 +6033,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 266.7 116.8399 90)
+			(at 266.7 95.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5371,7 +6042,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 262.89 116.84 0)
+			(at 262.89 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5380,7 +6051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 116.84 0)
+			(at 262.89 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5389,7 +6060,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 262.89 116.84 0)
+			(at 262.89 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5503,7 +6174,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 199.39 82.55 0)
 			(effects
 				(font
@@ -5530,6 +6201,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr. No" ""
+			(at 194.31 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" ""
+			(at 194.31 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12155f9d-bd9a-45f1-b830-3e734ddfeea5")
 		)
@@ -5544,7 +6233,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 262.89 91.44 270)
+		(at 262.89 77.47 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5553,7 +6242,7 @@
 		(fields_autoplaced yes)
 		(uuid "d2087587-8879-41ed-9311-2e34ee2909a5")
 		(property "Reference" "#PWR09"
-			(at 259.08 91.44 0)
+			(at 259.08 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5562,7 +6251,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 266.7 91.4399 90)
+			(at 266.7 77.4699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5571,7 +6260,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 262.89 91.44 0)
+			(at 262.89 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5580,7 +6269,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 91.44 0)
+			(at 262.89 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5589,7 +6278,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 262.89 91.44 0)
+			(at 262.89 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5610,35 +6299,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 39.37 119.38 90)
+		(lib_id "Connector:TestPoint")
+		(at 81.28 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d58b4b97-7b33-49e6-8849-233b60292b7d")
-		(property "Reference" "SW1"
-			(at 40.64 118.1099 90)
+		(uuid "d3cf48ae-8b54-4522-a3cb-cbaa4df5c8da")
+		(property "Reference" "TP3"
+			(at 77.978 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 40.64 120.6499 90)
+		(property "Value" "TestPoint"
+			(at 77.978 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 34.29 119.38 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 81.28 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5647,7 +6334,74 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 34.29 119.38 0)
+			(at 81.28 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 81.28 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "998b8820-c04d-4466-b474-2617e8099d13")
+		)
+		(instances
+			(project ""
+				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 39.37 113.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d58b4b97-7b33-49e6-8849-233b60292b7d")
+		(property "Reference" "SW1"
+			(at 40.64 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 40.64 114.2999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5656,7 +6410,25 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 39.37 119.38 0)
+			(at 39.37 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" ""
+			(at 39.37 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" ""
+			(at 39.37 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5747,75 +6519,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 262.89 132.08 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d8a22b49-e173-43bf-b51c-1fa6a536b299")
-		(property "Reference" "#PWR016"
-			(at 269.24 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 266.7 132.0799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 262.89 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 262.89 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 262.89 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "608cd247-3941-4de2-b34b-8b309cc75ac9")
-		)
-		(instances
-			(project "led-drones"
-				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
-		(at 262.89 129.54 270)
+		(at 262.89 104.14 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5824,7 +6529,7 @@
 		(fields_autoplaced yes)
 		(uuid "e0f53dcb-aeb9-46a9-be21-ba90d6c16c9a")
 		(property "Reference" "#PWR015"
-			(at 259.08 129.54 0)
+			(at 259.08 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5833,7 +6538,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 266.7 129.5399 90)
+			(at 266.7 104.1399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5842,7 +6547,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 262.89 129.54 0)
+			(at 262.89 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5851,7 +6556,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 129.54 0)
+			(at 262.89 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5860,7 +6565,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 262.89 129.54 0)
+			(at 262.89 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5881,75 +6586,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 262.89 119.38 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e4085c62-5117-41c7-a7bc-621281051194")
-		(property "Reference" "#PWR014"
-			(at 269.24 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 266.7 119.3799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 262.89 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 262.89 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 262.89 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "234e01b0-ff54-4d06-aa9b-120c8420242a")
-		)
-		(instances
-			(project "led-drones"
-				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
-		(at 39.37 111.76 0)
+		(at 39.37 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5958,7 +6596,7 @@
 		(fields_autoplaced yes)
 		(uuid "e887969a-5b83-441a-923f-6ff97d2329a9")
 		(property "Reference" "#PWR031"
-			(at 39.37 115.57 0)
+			(at 39.37 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5967,7 +6605,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 39.37 106.68 0)
+			(at 39.37 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5975,7 +6613,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 111.76 0)
+			(at 39.37 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5984,7 +6622,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 111.76 0)
+			(at 39.37 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5993,7 +6631,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 39.37 111.76 0)
+			(at 39.37 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6015,32 +6653,32 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 255.27 93.98 180)
+		(at 255.27 80.01 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f28dbe00-16f3-4adc-8dea-46503557635e")
-		(property "Reference" "J2"
-			(at 255.27 85.09 0)
+		(property "Reference" "Vout2"
+			(at 252.222 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 255.27 87.63 0)
+		(property "Value" "-"
+			(at 255.27 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 255.27 93.98 0)
+		(property "Footprint" "B2PS-VH:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal"
+			(at 255.27 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6049,7 +6687,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 255.27 93.98 0)
+			(at 255.27 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6058,7 +6696,25 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 255.27 93.98 0)
+			(at 255.27 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" "B2PS-VH(LF)(SN)"
+			(at 255.27 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" "306-B2PS-VHLFSN"
+			(at 255.27 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6075,7 +6731,7 @@
 		(instances
 			(project "led-drones"
 				(path "/efb12308-5013-4ca6-a469-7d8d7a5c6e7f"
-					(reference "J2")
+					(reference "Vout2")
 					(unit 1)
 				)
 			)
@@ -6149,7 +6805,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 262.89 78.74 270)
+		(at 262.89 68.58 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6158,7 +6814,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9d2fb0e-2a42-4c77-8734-debfe718fdb8")
 		(property "Reference" "#PWR07"
-			(at 259.08 78.74 0)
+			(at 259.08 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6167,7 +6823,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 266.7 78.7399 90)
+			(at 266.7 68.5799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6176,7 +6832,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 262.89 78.74 0)
+			(at 262.89 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6185,7 +6841,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 78.74 0)
+			(at 262.89 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6194,7 +6850,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 262.89 78.74 0)
+			(at 262.89 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6241,7 +6897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad2.0mm"
 			(at 256.54 156.21 0)
 			(effects
 				(font
@@ -6260,6 +6916,24 @@
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
+			(at 256.54 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. No" ""
+			(at 256.54 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser No" ""
 			(at 256.54 156.21 0)
 			(effects
 				(font
